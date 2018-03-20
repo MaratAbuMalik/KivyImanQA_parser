@@ -52,7 +52,7 @@ parse_questions()
 with open('imanqa_database.pickle', 'wb') as f:
     pickle.dump(database, f)
     pickle.dump(unique_questions, f)
-    copyfile('imanqa_database.pickle', '../ImanQA/imanqa_database.pickle')
+copyfile('imanqa_database.pickle', '../ImanQA/imanqa_database.pickle')
 
 if __name__ == '__main__':
     print('Вопросы:')
